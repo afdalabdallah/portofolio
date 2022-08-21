@@ -2,6 +2,7 @@ import { Center, Flex } from "@chakra-ui/react";
 import React from "react";
 import Typed from "typed.js";
 import ContactBtn from "./ContactBtn";
+import { useEffect, useRef } from "react";
 
 function LandingText() {
   const textStyle = {
@@ -23,18 +24,21 @@ function LandingText() {
     color: "#79C7FA",
   };
   //   var typed = new Typed(".typing1", options);
-  const el = React.useRef(null);
+  const el = useRef(null);
   const typed = React.useRef(null);
-  React.useEffect(() => {
-    const options = {
+  useEffect(() => {
+    const typed = new Typed(el.current, {
       strings: ["Student", "Web Developer"],
       typeSpeed: 80,
       backSpeed: 80,
       loop: true,
-    };
-    typed.current = new Typed(el.current, options);
+    });
+    // const options = {
+
+    // };
+    // typed.current = new Typed(el.current, options);
     return () => {
-      typed.current.destroy();
+      typed.destroy();
     };
   }, []);
 
