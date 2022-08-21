@@ -52,10 +52,7 @@ function LandingText() {
           M Afdal Abdallah
         </Text>
         <Text style={subText} fontSize={{ base: "1em", md: "2.5em" }}>
-          I&apos;m a{" "}
-          <span style={typedStyle} ref={el}>
-            Web Developer
-          </span>
+          I&apos;m a <span style={typedStyle} ref={el} />
         </Text>
         <ContactBtn />
       </Box>
