@@ -34,9 +34,9 @@ function LandingText() {
       loop: true,
     };
     typed.current = new Typed(el.current, options);
-    return () => {
-      typed.current.destroy();
-    };
+    // return () => {
+    //   typed.current.destroy();
+    // };
   }, []);
 
   const styling = {
