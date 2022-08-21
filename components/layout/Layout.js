@@ -8,11 +8,11 @@ function Layout({ children }) {
       bgColor={"rgb(62, 43, 43)"}
       w={"100%"}
       color="white"
-      p="1em 5em"
-      overflow={"hidden"}
+      p={{ md: "1em 5em", base: "1em 3em" }}
+      overflow={"auto"}
     >
       <Navbar />
-      <Box h={"100%"} w={"100%"} p={{ lg: "4em 3em", base: "5em 0" }}>
+      <Box alignItems={"center"} p={{ lg: "0em 3em", base: "2em 0" }}>
         {children}
       </Box>
     </Box>
