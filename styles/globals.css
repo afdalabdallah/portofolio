@@ -24,3 +24,13 @@ a {
     background: black;
   }
 }
+
+html,
+body,
+body > div:first-child,
+div#__next,
+div#__next > div {
+  /* max-width: 2000px; */
+  height: 100%;
+  margin: 0 auto;
+}
