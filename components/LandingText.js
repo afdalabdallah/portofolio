@@ -43,10 +43,10 @@ function LandingText() {
   };
   return (
     <div style={styling}>
-      <p style={textStyle}>Hello, I'm</p>
+      <p style={textStyle}>Hello, I&apos;m</p>
       <h1 style={nameStyle}>M Afdal Abdallah</h1>
       <h2 style={subText}>
-        I'm a{" "}
+        I&apos;m a{" "}
         <span style={typedStyle} ref={el}>
           Web Developer
         </span>
