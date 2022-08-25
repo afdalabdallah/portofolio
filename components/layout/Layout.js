@@ -9,7 +9,7 @@ function Layout({ children }) {
       bgColor={"#141414"}
       w={"100%"}
       color="white"
-      p={{ md: "1em 5em", base: "1em 3em" }}
+      p={{ md: "1em 5em", base: "1em 1.5em" }}
       overflow={"auto"}
     >
       <Navbar />
