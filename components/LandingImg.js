@@ -15,7 +15,7 @@ function LandingImg() {
           marginTop={["-65px", "-100px"]}
           maxH={"130%"}
           minW={"100%"}
-          src="https://drive.google.com/uc?export=view&id=1A1POyPPGHUv3oUieq_IxiJI0N8paWolr"
+          src="/foto-bromo.jpg"
           alt="foto-bromo"
           fit={"cover"}
           placeholder="blur"

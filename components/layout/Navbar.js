@@ -93,6 +93,7 @@ function Navbar() {
               <NextLink href={"/"}>
                 <Link
                   _hover={onhoverLink}
+                  onClick={onClose}
                   color={router.pathname === "/" && "#79C7FA"}
                 >
                   Home
@@ -102,6 +103,7 @@ function Navbar() {
               <NextLink href={"/about"}>
                 <Link
                   _hover={onhoverLink}
+                  onClick={onClose}
                   color={router.pathname === "/about" && "#79C7FA"}
                 >
                   About
@@ -111,6 +113,7 @@ function Navbar() {
               <NextLink href={"/projects"}>
                 <Link
                   _hover={onhoverLink}
+                  onClick={onClose}
                   color={router.pathname === "/projects" && "#79C7FA"}
                 >
                   Projects
@@ -120,6 +123,7 @@ function Navbar() {
               <NextLink href={"/contact"}>
                 <Link
                   _hover={onhoverLink}
+                  onClick={onClose}
                   color={router.pathname === "/contact" && "#79C7FA"}
                 >
                   Contact
