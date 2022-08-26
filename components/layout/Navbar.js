@@ -27,10 +27,10 @@ function Navbar() {
   const btnRef = React.useRef();
 
   return (
-    <Flex justifyContent={"end"} color={"white"} fontSize={"1.3em"}>
+    <Flex justifyContent={"end"} color={"white"} fontSize={"1.2em"}>
       <Flex
         gap="2em"
-        paddingTop={"2rem"}
+        paddingTop={"1em"}
         paddingBottom={"2em"}
         display={{ base: "none", md: "flex" }}
       >

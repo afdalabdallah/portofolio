@@ -1,4 +1,12 @@
-import { Box, Center, Flex, HStack, Link, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Flex,
+  HStack,
+  Icon,
+  Link,
+  VStack,
+} from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import Head from "next/head";
@@ -6,6 +14,7 @@ import { RiReactjsFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
 import { SiChakraui } from "react-icons/si";
 import { FaNodeJs } from "react-icons/fa";
+import ContactBtn from "../../components/ContactBtn";
 
 function About() {
   const aboutName = {
@@ -60,23 +69,29 @@ function About() {
           </Text>
         </Center>
         <Box minW={{ md: "60%" }}>
+          <ContactBtn
+            text="Download CV"
+            target="_blank"
+            href="https://drive.google.com/file/d/1kkifoczxWiitJx8oLfmoU6tw_P8mlruF/view?usp=sharing"
+          />
+        </Box>
+
+        <Box minW={{ md: "60%" }}>
           <Text fontSize={"1.8em"} fontWeight={"700"}>
             Favorite Tech Stacks
           </Text>
           <HStack gap={"0.3em"}>
             <Box _hover={techHover}>
-              <TbBrandNextjs size={"3.5em"} />
+              <Icon as={TbBrandNextjs} boxSize={"3.5em"} />
             </Box>
             <Box _hover={techHover}>
-              <SiChakraui size={"3em"} />
+              <Icon as={SiChakraui} boxSize={"3em"} />
             </Box>
             <Box _hover={techHover}>
-              {" "}
-              <RiReactjsFill size={"3.5em"} />
+              <Icon as={RiReactjsFill} boxSize={"3.5em"} />
             </Box>
             <Box _hover={techHover}>
-              {" "}
-              <FaNodeJs size={"3.3em"} />
+              <Icon as={FaNodeJs} boxSize={"3.3em"} />
             </Box>
           </HStack>
         </Box>

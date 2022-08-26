@@ -4,6 +4,7 @@ import Typed from "typed.js";
 import ContactBtn from "./ContactBtn";
 import { useEffect, useRef } from "react";
 import TypewriterComponent from "typewriter-effect";
+import AnimatedText from "./AnimatedText";
 
 function LandingText() {
   const textStyle = {
@@ -48,13 +49,11 @@ function LandingText() {
         <Text style={textStyle} fontSize={{ base: "1em", md: "1.6em" }}>
           Hello, I&apos;m
         </Text>
-        <Text style={nameStyle} fontSize={{ base: "2.5em", md: "4.5em" }}>
-          M Afdal Abdallah
-        </Text>
+        <AnimatedText fontSize="4.5em" base="2.5em" text="M Afdal Abdallah" />
         <Text style={subText} fontSize={{ base: "1em", md: "2.5em" }}>
           I&apos;m a <span style={typedStyle} ref={el} />
         </Text>
-        <ContactBtn />
+        <ContactBtn text="Contact Me" href="/contact" />
       </Box>
     </Flex>
   );

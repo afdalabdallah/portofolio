@@ -1,4 +1,5 @@
 import React from "react";
+import Head from "next/head";
 import { HStack, Box, Text } from "@chakra-ui/react";
 import ProjectCard from "../../components/ProjectCard";
 
@@ -11,6 +12,9 @@ function Projects() {
   };
   return (
     <>
+      <Head>
+        <title>Projects</title>
+      </Head>
       <HStack justifyContent={"center"} gap={"11px"} marginBottom={"2em"}>
         <Box
           style={line}
