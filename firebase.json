@@ -1,20 +1,13 @@
 {
   "hosting": {
-    "site": "afdalabdallah",
     "public": "public",
     "ignore": [
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
-    ],
-    "rewrites": [
-      {
-        "source": "**",
-        "function": "nextServer"
-      }
     ]
   },
-   "functions": {
+  "functions": {
     "source": ".",
     "ignore": [
       ".firebase/**",
