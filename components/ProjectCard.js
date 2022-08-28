@@ -1,4 +1,12 @@
-import { Img, Link, Text, VStack, Flex, Box } from "@chakra-ui/react";
+import {
+  Img,
+  Link,
+  Text,
+  VStack,
+  Flex,
+  Box,
+  StackItem,
+} from "@chakra-ui/react";
 import React, { useEffect, useRef, useState } from "react";
 
 const blueColor = "#79C7FA";
@@ -38,25 +46,29 @@ const projectData = [
     link: "https://github.com/afdalabdallah/midframepro",
     img: "/dummy-img.png",
   },
+
   {
     id: "2",
-    title: "Snake Path Finding",
-    desc: "Simple snake games that implements BFS and DFS to find the optimal path to the food. I made this with my friends for Artificial Intelligence lecture's final project",
-    link: "https://github.com/fydhfzh/FP_TURU-DEK_KB-E",
-    img: "/snake-img.png",
-  },
-  {
-    id: "3",
     title: "Maesa Group Recruitment",
     desc: "Fully functioning website for new staff recruitment. This is the project that I made when internship at Maesa Group . I contribute as the frontend developer.",
     link: "https://recruitment.maesagroup.co.id",
     img: "/maesa-img.png",
   },
+  {
+    id: "3",
+    title: "Covid Data Indonesia",
+    desc: "A website that shows current data related to covid-19 in Indonesia. The project was stoped, but I plan to continue it soon",
+    link: "https://github.com/afdalabdallah/covid-data",
+    img: "/covidweb.png",
+  },
+  {
+    id: "4",
+    title: "Snake Path Finding",
+    desc: "Simple snake games that implements BFS and DFS to find the optimal path to the food. I made this with my friends for Artificial Intelligence lecture's final project",
+    link: "https://github.com/fydhfzh/FP_TURU-DEK_KB-E",
+    img: "/snake-img.png",
+  },
 ];
-
-const hoverCursor = {
-  cursor: "pointer",
-};
 
 function ProjectCard() {
   return (
@@ -70,28 +82,24 @@ function ProjectCard() {
               flexBasis={{ lg: "27%" }}
               _hover={boxHover}
             >
-              <VStack>
-                <Img
-                  minH={"10em"}
-                  maxH={"10em"}
-                  borderRadius={"3px"}
-                  src={data.img}
-                />
-                <Text color={textBlue} style={projectTitleStyle}>
-                  {data.title}
-                </Text>
-                <Text h={"120px"} overflow={"hidden"} textAlign={"center"}>
-                  {data.desc}
-                </Text>
-                <Link
-                  _hover={hoverCursor}
-                  target={"_blank"}
-                  href={data.link}
-                  style={readMoreStyle}
-                >
-                  READ MORE
-                </Link>
-              </VStack>
+              {" "}
+              <Link target={"_blank"} href={data.link} style={readMoreStyle}>
+                <VStack>
+                  <Img
+                    minH={"10em"}
+                    maxH={"10em"}
+                    borderRadius={"3px"}
+                    src={data.img}
+                  />
+                  <Text color={textBlue} style={projectTitleStyle}>
+                    {data.title}
+                  </Text>
+                  <Text h={"120px"} overflow={"hidden"} textAlign={"center"}>
+                    {data.desc}
+                  </Text>
+                  <StackItem>READ MORE</StackItem>
+                </VStack>
+              </Link>
             </Box>
           </>
         );
