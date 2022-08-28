@@ -14,7 +14,7 @@ const gradientAnimation = keyframes`
   60% { background-position: -20% 0%; }
   70% { background-position: -40% 0%; }
   80% { background-position: -60% 0%; }
-  80% { background-position: -80% 0%; }
+  90% { background-position: -80% 0%; }
   100% {  background-position: -100% 0%; }
 `;
 
@@ -33,7 +33,7 @@ const AnimatedTextGradient = styled.p`
     #75bff1,
     #79c7fa
   );
-  //   background: linear-gradient(to right, red, blue, green, red, blue, green);
+  // background: linear-gradient(to right, red, blue, green, red, blue, green);
   background-size: 200%;
   background-clip: text;
   -webkit-background-clip: text;

@@ -33,7 +33,7 @@ function Contact() {
       <Head>
         <title>Contact</title>
       </Head>
-      <VStack marginTop={{ base: "4rem" }}>
+      <VStack marginTop={{ md: "4rem", base: "2em" }}>
         <HStack>
           <AnimatedText fontSize="3.5em" base="1.9em" text="Reach Out To Me!" />
           <Box position={"relative"} display={{ base: "none", sm: "block" }}>
