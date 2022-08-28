@@ -2,11 +2,14 @@
   "name": "portofolio",
   "version": "0.1.0",
   "private": true,
+  "main": "server.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next export",
+    "deploy": "firebase deploy --only hosting"
   },
   "dependencies": {
     "@chakra-ui/icons": "^2.0.8",
@@ -14,6 +17,8 @@
     "@emotion/react": "^11.10.0",
     "@emotion/styled": "^11.10.0",
     "firebase": "^9.9.3",
+    "firebase-admin": "^11.0.1",
+    "firebase-functions": "^3.22.0",
     "framer-motion": "^6.5.1",
     "next": "^12.2.4",
     "react": "^18.2.0",
