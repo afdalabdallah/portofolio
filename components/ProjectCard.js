@@ -82,7 +82,6 @@ function ProjectCard() {
               flexBasis={{ lg: "27%" }}
               _hover={boxHover}
             >
-              {" "}
               <Link target={"_blank"} href={data.link} style={readMoreStyle}>
                 <VStack>
                   <Img

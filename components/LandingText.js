@@ -3,8 +3,8 @@ import React from "react";
 import Typed from "typed.js";
 import ContactBtn from "./ContactBtn";
 import { useEffect, useRef } from "react";
-import TypewriterComponent from "typewriter-effect";
-import AnimatedText from "./AnimatedText";
+import AnimatedText from "./animation/AnimatedText";
+import FadeAnimation from "./animation/FadeAnimation";
 
 function LandingText() {
   const textStyle = {
@@ -46,14 +46,16 @@ function LandingText() {
   return (
     <Flex alignItems={"center"}>
       <Box>
-        <Text style={textStyle} fontSize={{ base: "1em", md: "1.6em" }}>
-          Hello, I&apos;m
-        </Text>
-        <AnimatedText fontSize="4.5em" base="2.5em" text="M Afdal Abdallah" />
-        <Text style={subText} fontSize={{ base: "1em", md: "2.5em" }}>
-          I&apos;m a <span style={typedStyle} ref={el} />
-        </Text>
-        <ContactBtn text="Contact Me" href="/contact" />
+        <FadeAnimation delay="1">
+          <Text style={textStyle} fontSize={{ base: "1em", md: "1.6em" }}>
+            Hello, I&apos;m
+          </Text>
+          <AnimatedText fontSize="4.5em" base="2.5em" text="M Afdal Abdallah" />
+          <Text style={subText} fontSize={{ base: "1em", md: "2.5em" }}>
+            I&apos;m a <span style={typedStyle} ref={el} />
+          </Text>
+          <ContactBtn text="Contact Me" href="/contact" />
+        </FadeAnimation>
       </Box>
     </Flex>
   );

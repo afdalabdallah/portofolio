@@ -3,7 +3,6 @@ import Head from "next/head";
 import Image from "next/image";
 import LandingImg from "../components/LandingImg";
 import LandingText from "../components/LandingText";
-import Navbar from "../components/layout/Navbar";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {

@@ -1,8 +1,6 @@
-import { Box, StackItem, VStack, Text } from "@chakra-ui/react";
 import React from "react";
-import Head from "next/head";
 import styled from "styled-components";
-import { keyframes, css } from "styled-components";
+import { keyframes } from "styled-components";
 
 const gradientAnimation = keyframes`
   0% {  background-position: 100% 0%; }
