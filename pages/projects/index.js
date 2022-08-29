@@ -16,7 +16,7 @@ function Projects() {
   return (
     <>
       <Head>
-        <title>Projects</title>
+        <title>Projects | afdalabdallah.com</title>
       </Head>
       <HStack justifyContent={"center"} gap={"11px"} marginBottom={"2em"}>
         <SlideFadeAnimation delay="1" y="0" x="-50">

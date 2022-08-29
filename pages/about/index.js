@@ -23,7 +23,7 @@ function About() {
   return (
     <>
       <Head>
-        <title>About</title>
+        <title>About | afdalabdallah.com</title>
       </Head>
       <VStack>
         <HStack justifyContent={"center"} gap={"11px"} marginBottom={"6px"}>
