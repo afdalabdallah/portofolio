@@ -14,7 +14,7 @@ export default function Home() {
         <link rel="icon" href="/my-logo.svg" />
       </Head>
       <Flex
-        marginTop={"3em"}
+        marginTop={{ md: "3em" }}
         gap={["3em", "5em", "5em", "12em"]}
         justifyContent={"center"}
         wrap={"wrap"}
