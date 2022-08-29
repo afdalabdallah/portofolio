@@ -10,6 +10,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>M Afdal Abdallah</title>
+        <meta name="description" content="Web portofolio of M Afdal Abdallah" />
         <link rel="icon" href="/my-logo.svg" />
       </Head>
       <Flex
