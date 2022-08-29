@@ -10,10 +10,10 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
         <title>M Afdal Abdallah</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="/my-logo.svg" />
       </Head>
       <Flex
-        marginTop={["0em", "0em", "0em", "0em", "3em"]}
+        marginTop={"3em"}
         gap={["3em", "5em", "5em", "12em"]}
         justifyContent={"center"}
         wrap={"wrap"}

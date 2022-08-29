@@ -30,7 +30,7 @@ function Contact() {
   return (
     <>
       <Head>
-        <title>Contact</title>
+        <title>Contact | afdalabdallah.com</title>
       </Head>
       <VStack marginTop={{ md: "4rem", base: "2em" }}>
         <SlideAnimation x="0" y="-20" delay=".5" times="1">

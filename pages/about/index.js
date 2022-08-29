@@ -24,6 +24,7 @@ function About() {
     <>
       <Head>
         <title>About | afdalabdallah.com</title>
+        <link rel="icon" href="/my-logo.svg" />
       </Head>
       <VStack>
         <HStack justifyContent={"center"} gap={"11px"} marginBottom={"6px"}>

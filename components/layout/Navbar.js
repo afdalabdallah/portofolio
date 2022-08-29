@@ -1,4 +1,13 @@
-import { Box, Flex, Link, Input, Button, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Flex,
+  Link,
+  Input,
+  Button,
+  VStack,
+  Icon,
+  Img,
+} from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import { HamburgerIcon } from "@chakra-ui/icons";
 import React from "react";
@@ -27,12 +36,25 @@ function Navbar() {
   const btnRef = React.useRef();
 
   return (
-    <Flex justifyContent={"end"} color={"white"} fontSize={"1.2em"}>
+    <Flex
+      paddingTop={{ md: "0.5em" }}
+      paddingBottom={{ md: "2em" }}
+      justifyContent={{ md: "space-between", base: "end" }}
+      color={"white"}
+      fontSize={"1.2em"}
+    >
+      <Box display={{ base: "none", md: "block" }}>
+        <NextLink href={"/"}>
+          <Link>
+            <Img maxH={"50px"} src="/my-logo.svg" />
+          </Link>
+        </NextLink>
+      </Box>
+
       <Flex
         gap="2em"
-        paddingTop={"1em"}
-        paddingBottom={"2em"}
         display={{ base: "none", md: "flex" }}
+        alignItems={"center"}
       >
         <NextLink href={"/"}>
           <Link

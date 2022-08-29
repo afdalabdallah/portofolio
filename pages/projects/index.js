@@ -17,6 +17,7 @@ function Projects() {
     <>
       <Head>
         <title>Projects | afdalabdallah.com</title>
+        <link rel="icon" href="/my-logo.svg" />
       </Head>
       <HStack justifyContent={"center"} gap={"11px"} marginBottom={"2em"}>
         <SlideFadeAnimation delay="1" y="0" x="-50">
