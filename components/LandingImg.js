@@ -17,7 +17,7 @@ function LandingImg() {
             marginTop={["-65px", "-100px"]}
             maxH={"130%"}
             minW={"100%"}
-            src="/foto-bromo.JPG"
+            src="/foto-bromo-min.JPG"
             alt="foto-bromo"
             fit={"cover"}
             placeholder="blur"
