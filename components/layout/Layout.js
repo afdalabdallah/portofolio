@@ -5,7 +5,6 @@ import Navbar from "./Navbar";
 function Layout({ children }) {
   return (
     <Box
-      // "#0E1C2C"
       bgColor={"#141414"}
       w={"100%"}
       color="white"
