@@ -82,7 +82,7 @@ function About() {
             <ContactBtn
               text="Download CV"
               target="_blank"
-              href="https://drive.google.com/file/d/1SeqmHu32bJOM23M2VpvM5CAvIrXEhVxh/view?usp=sharing"
+              href="https://drive.google.com/file/d/1fcJKxOuhIwkwyqRiMiR7cjEWgaqQvu04/view?usp=share_link"
             />
           </FadeAnimation>
         </Box>
