@@ -24,6 +24,7 @@ import SlideAnimation from "../../components/animation/SlideAnimation";
 
 const iconHover = {
   color: "#79C7FA",
+  cursor: "pointer",
 };
 
 function Contact() {

@@ -1,11 +1,19 @@
-import { Box, Center, Fade, HStack, Icon, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Center,
+  Fade,
+  HStack,
+  Icon,
+  VStack,
+  Tooltip,
+} from "@chakra-ui/react";
 import { Text } from "@chakra-ui/react";
 import React, { useEffect } from "react";
 import Head from "next/head";
 import { RiReactjsFill } from "react-icons/ri";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiChakraui } from "react-icons/si";
-import { FaNodeJs } from "react-icons/fa";
+import { SiChakraui, SiLaravel } from "react-icons/si";
+import { FaNodeJs, FaLaravel } from "react-icons/fa";
 import ContactBtn from "../../components/ContactBtn";
 import SlideFadeAnimation from "../../components/animation/SlideFadeAnimation";
 import FadeAnimation from "../../components/animation/FadeAnimation";
@@ -71,8 +79,8 @@ function About() {
               others, I realise that <span>Web Development</span> is the one for
               me.
               <br />
-              <br />I am currently learning about frontend web developmenet. I
-              use HTML/CSS, JavaScript and NextJS as my base.
+              <br />I am currently learning about web development. I use
+              HTML/CSS, JavaScript, NextJS, and Laravel as my base.
             </Text>
           </Center>
         </FadeAnimation>
@@ -82,7 +90,7 @@ function About() {
             <ContactBtn
               text="Download CV"
               target="_blank"
-              href="https://drive.google.com/file/d/1fcJKxOuhIwkwyqRiMiR7cjEWgaqQvu04/view?usp=share_link"
+              href="https://drive.google.com/file/d/1wmi53dBJoOniJqjENCjgwKagW6AiYg1_/view?usp=share_link"
             />
           </FadeAnimation>
         </Box>
@@ -93,18 +101,32 @@ function About() {
               Favorite Tech Stacks
             </Text>
             <HStack gap={"0.3em"}>
-              <Box _hover={techHover}>
-                <Icon as={TbBrandNextjs} boxSize={"3.5em"} />
-              </Box>
-              <Box _hover={techHover}>
-                <Icon as={SiChakraui} boxSize={"3em"} />
-              </Box>
-              <Box _hover={techHover}>
-                <Icon as={RiReactjsFill} boxSize={"3.5em"} />
-              </Box>
-              <Box _hover={techHover}>
-                <Icon as={FaNodeJs} boxSize={"3.3em"} />
-              </Box>
+              <Tooltip hasArrow label="NextJs">
+                <Box _hover={techHover}>
+                  <Icon as={TbBrandNextjs} boxSize={"3.5em"} />
+                </Box>
+              </Tooltip>
+              <Tooltip hasArrow label="ChakraUI">
+                <Box _hover={techHover}>
+                  <Icon as={SiChakraui} boxSize={"3em"} />
+                </Box>
+              </Tooltip>
+
+              <Tooltip hasArrow label="ReactJs">
+                <Box _hover={techHover}>
+                  <Icon as={RiReactjsFill} boxSize={"3.5em"} />
+                </Box>
+              </Tooltip>
+              <Tooltip hasArrow label="NodeJs">
+                <Box _hover={techHover}>
+                  <Icon as={FaNodeJs} boxSize={"3.3em"} />
+                </Box>
+              </Tooltip>
+              <Tooltip hasArrow label="Laravel">
+                <Box _hover={techHover}>
+                  <Icon as={FaLaravel} boxSize={"3.3em"} />
+                </Box>
+              </Tooltip>
             </HStack>
           </FadeAnimation>
         </Box>
